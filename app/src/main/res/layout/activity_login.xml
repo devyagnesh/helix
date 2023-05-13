@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/company_logo_desc"
+            android:src="@drawable/logo_blue"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticab"
+            android:textSize="24sp"
+            android:textColor="@color/lightBlue"
+            android:text="@string/str_login_title"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+        <EditText
+            android:id="@+id/login_email"
+            android:inputType="textEmailAddress"
+            style="@style/form_input_style"
+            android:hint="@string/str_login_email"
+            android:drawableStart="@drawable/icon_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_title"
+            android:autofillHints="" />
+
+
+        <EditText
+            android:id="@+id/login_password"
+            style="@style/form_input_style"
+            android:autofillHints=""
+            android:hint="@string/str_login_password"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/icon_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_email" />
+
+
+        <LinearLayout
+            android:id="@+id/frgt_lin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_password">
+
+            <TextView
+                android:text="@string/str_forgot_password"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark"
+                style="@style/auth_form_str" />
+
+            <TextView
+                android:id="@+id/reset_password_act"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/auth_form_str"
+                android:text="@string/str_reset_password_act"
+                android:fontFamily="@font/helveticab"
+                android:textColor="@color/lightBlue"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cornerRadius="4dp"
+            android:backgroundTint="@color/darkBlue"
+            android:paddingVertical="8dp"
+            android:fontFamily="@font/helveticab"
+            android:text="@string/str_btn_login"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            android:letterSpacing=".04"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frgt_lin_layout" />
+
+
+        <LinearLayout
+            android:id="@+id/newacc_lin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/str_new_acc"
+                android:textAlignment="textEnd"
+                android:textColor="@color/dark"
+                style="@style/auth_form_str" />
+
+            <TextView
+                android:id="@+id/btn_goto_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/auth_form_str"
+                android:text="@string/str_create_account_act"
+                android:fontFamily="@font/helveticab"
+                android:textColor="@color/lightBlue"
+                android:layout_marginStart="5dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/err_msg_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/danger"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@+id/newacc_lin_layout"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/company_name"
+            android:fontFamily="@font/helvetica"
+            android:textColor="@color/dark"
+            android:textSize="16sp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/err_msg_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

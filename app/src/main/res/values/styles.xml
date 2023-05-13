@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="form_input_style">
+        <item name="android:layout_width">@dimen/input_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/helvetica</item>
+        <item name="android:textColor">@color/darkBlue</item>
+        <item name="android:background">@drawable/custom_input</item>
+        <item name="android:paddingVertical">10dp</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textCursorDrawable">@drawable/form_input_cursor</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+
+    <style name="auth_form_str">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/helvetica</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <dimen name="input_width">320dp</dimen>
+</resources>

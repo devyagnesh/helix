@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">Helix</string>
+    <string name="logo_description" translatable="false">helix logo</string>
+    <string name="app_sub_title" translatable="false">customer manager</string>
+    <string name="company_name" translatable="false">Nebula Soft Pvt Ltd.</string>
+    <string name="company_logo_desc" translatable="false">helix customer and prescription manager app</string>
+    <string name="str_login_title">Welcome, Sign In</string>
+    <string name="str_login_email">Email address</string>
+    <string name="str_login_password">Password</string>
+    <string name="str_forgot_password">Forgotten Password ?</string>
+    <string name="str_reset_password_act">Reset now</string>
+    <string name="str_btn_login">Login</string>
+    <string name="str_create_account_act">Signup</string>
+    <string name="str_new_acc">Don\'t have an account ?</string>
+    <string name="str_signup_title">Get Started</string>
+    <string name="str_signup_fullname">Fullname</string>
+    <string name="str_signup_email">Email address</string>
+    <string name="str_signup_password">Create Password</string>
+    <string name="str_signup_confirm_password">Confirm Password</string>
+    <string name="str_have_acc">Already have an account?</string>
+    <string name="str_login_account_act">Signin</string>
+    <string name="err_signup_msg_invalid_fullname">Please enter a valid Fullname !</string>
+    <string name="err_signup_msg_invalid_email">Please enter a valid email address !</string>
+    <string name="err_signup_msg_invalid_password">Password must be 8 characters long !</string>
+    <string name="err_signup_msg_invalid_confirm_password">Password does not matched !</string>
+    <string name="err_login_msg_empty_field">Email and Password Required !</string>
+
+</resources>
